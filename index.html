@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Rogue One RPG</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+	<div class="container-fluid">
+		<body>
+			<div class="row"><div class="col-xs-12 col-sm-12 col-md-0 col-lg-0"><img class="img-responsive" id="headerimage" src="assets/images/rogue-one-bg-small.jpg" alt="logo"/></div></div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<img class="img-responsive" id="logo" src="assets/images/logo.png" alt="logo"/>
+								<h1>Role Playing Game</h1>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="instructions">
+								<h2>Instructions</h2>
+								<p><b>Select your hero and choose an ally to help you defeat The Empire!</b></p> 
+								<p>Together you will face an enemy of your choosing. Your strength grows with each attack you make, so choose your opponents wisely and don't be disheartened when your enemy strikes back! Your rebellion succeeds when you have defeated all enemies.</p>   
+								<p><b>MAY THE FORCE BE WITH YOU!</b></p> 
+
+								<audio id="music" controls style="width: 100%;">
+									<source src="assets/audio/audio.mp3" type="audio/mp3">
+								</audio>
+							</div> <!-- instructions -->
+							</div> <!-- column -->
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div id="allies">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>Allies</h2></div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="allygallery">
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="jyn" src="assets/images/jyn.jpg" alt="Jyn Erso"/>
+												<p class="chartext" id="jyntext"><b>Jyn Erso</b><br>150 HP &amp; 8 ATT</p>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="cassian" src="assets/images/cassian.jpg" alt="Cassian Andor"/> 
+												<p class="chartext" id="cassiantext"><b>Cassian Andor</b><br>125 HP &amp; 9 ATT</p>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="k2so" src="assets/images/k2so.jpg" alt="K-2SO"/> 
+												<p class="chartext" id="k2sotext"><b>K-2SO</b><br>250 HP &amp; 4 ATT</p>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="chirrut" src="assets/images/chirrut.jpg" alt="Chirrut Imwe"/>
+												<p class="chartext" id="chirruttext"><b>Chirrut &Icirc;mwe</b><br>100 HP &amp; 10 ATT</p> 
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="baze" src="assets/images/baze.jpg" alt="Baze Malbus"/>
+												<p class="chartext" id="bazetext"><b>Baze Malbus</b><br>200 HP &amp; 6 ATT</p> 
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="bodhi" src="assets/images/bodhi.jpg" alt="Bodhi Rook"/> 
+												<p class="chartext" id="bodhitext"><b>Bodhi Rook</b><br>175 HP &amp; 7 ATT</p>
+											</div> <!-- pic -->
+										</div> <!-- row -->
+									</div> <!-- allies -->
+								</div> <!-- column -->
+							
+								<div id="enemies">
+									<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>Enemies</h2></div>
+										</div>
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="enemygallery">
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="darth-vader" src="assets/images/darth-vader.jpg" alt="Darth Vader"/> 
+												<p class="chartext"><b>Darth Vader</b><br>350 HP &amp; 50 ATT</p>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="orson-krennic" src="assets/images/orson-krennic.jpg" alt="Orson Krennic"/> 
+												<p class="chartext"><b>Orson Krennic</b><br>250 HP &amp; 25 ATT</p>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+												<img class="img-responsive charpic" id="death-troopers" src="assets/images/death-troopers.jpg" alt="Death Troopers"/> 
+												<p class="chartext"><b>Death Troopers</b><br>500 HP &amp; 10 ATT</p>
+											</div> <!-- pic -->
+										</div> <!-- column -->
+									</div> <!-- row -->
+								</div> <!-- enemies -->
+							</div> <!-- column -->
+						</div> <!--row -->
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="battle">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>The Battle</h2></div>
+
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+										<div id="good">
+											<h3>You &amp; Your Ally</h3>
+											<img class="img-responsive charpic" id="yourchar" src="assets/images/selectchar.jpg" alt="Your Character"/>
+											<p class="chartext" id="yourchartext">Select a character.</p> 
+										
+											<img class="img-responsive charpic" id="yourally" src="assets/images/selectally.jpg" alt="Your Ally"/>
+											<p class="chartext" id="yourallytext">Select an ally.</p> 
+										</div>							
+									</div>
+								
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+										<div id="versus">
+											<h4>Your Stats</h4>
+											<p>HP: <span id="yourhp"></span><br>ATT: <span id="youratt"></span></p>
+						
+											<h4>Enemy Stats</h4>
+											<p>HP: <span id="yourhp"></span><br>ATT: <span id="youratt"></span></p>
+										</div>
+
+											<button>ATTACK YOUR ENEMY!</button>
+
+										<div id="result">
+											<p>You have dealt <span id="yourdamage">0</span> damage to your enemy!</p>
+											<p>In return, your enemy has dealt <span id="enemydamage">0</span> damage to you!</p>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+										<div id="evil">
+											<h3>Your Enemy</h3>
+											<img class="img-responsive charpic" id="yourenemy" src="assets/images/selectenemy.jpg" alt="Your Enemy"/> 
+											<p class="chartext" id="yourenemytext">Select an enemy.</p> 
+										</div>
+									</div>
+								</div> <!-- row -->
+
+							</div> <!-- battle -->
+							</div> <!-- column -->
+						</div> <!-- row -->
+						
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<footer>
+									<p id="disclaimer">All characters, images, and titles are trademarks&trade; or registered trademarks&reg; of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+								</footer>
+							</div> <!-- column -->
+						</div> <!-- row -->
+					</div> <!-- container -->
+				</div> <!-- column -->
+				
+				<div class="col-xs-0 col-sm-0 col-md-5 col-lg-5" id="spacer"></div>
+			</div> <!-- row -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+		</body>
+	</div> <!-- container-fluid -->
+</html>
