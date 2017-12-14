@@ -35,7 +35,7 @@
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div id="instructions">
 								<h2>Instructions</h2>
-								<p><b>Select your hero and choose an ally to help you defeat The Empire!</b></p> 
+								<p><b>Click to select your hero and double click to choose an ally to help you defeat The Empire!</b></p> 
 								<p>Together you will face an enemy of your choosing. Your strength grows with each attack you make, so choose your opponents wisely and don't be disheartened when your enemy strikes back! Your rebellion succeeds when you have defeated all enemies.</p>   
 								<p><b>MAY THE FORCE BE WITH YOU!</b></p> 
 
@@ -48,7 +48,7 @@
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div id="allies">
 									<div class="row">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>Allies</h2></div>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2 id="chartitle">Select a Character</h2></div>
 									</div>
 
 									<div class="row">
@@ -88,24 +88,24 @@
 							
 								<div id="enemies">
 									<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>Enemies</h2></div>
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery"><h2>Select an Enemy</h2></div>
 										</div>
 
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="enemygallery">
 											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-												<img class="img-responsive charpic" id="darth-vader" src="assets/images/darth-vader.jpg" alt="Darth Vader"/> 
-												<p class="chartext"><b>Darth Vader</b><br>350 HP &amp; 50 ATT</p>
+												<img class="img-responsive charpic" id="darthvader" src="assets/images/darth-vader.jpg" alt="Darth Vader"/> 
+												<p class="chartext" id="darthvadertext"><b>Darth Vader</b><br>350 HP &amp; 50 ATT</p>
 											</div>
 
 											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-												<img class="img-responsive charpic" id="orson-krennic" src="assets/images/orson-krennic.jpg" alt="Orson Krennic"/> 
-												<p class="chartext"><b>Orson Krennic</b><br>250 HP &amp; 25 ATT</p>
+												<img class="img-responsive charpic" id="orsonkrennic" src="assets/images/orson-krennic.jpg" alt="Orson Krennic"/> 
+												<p class="chartext" id="orsonkrennictext"><b>Orson Krennic</b><br>300 HP &amp; 25 ATT</p>
 											</div>
 
 											<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-												<img class="img-responsive charpic" id="death-troopers" src="assets/images/death-troopers.jpg" alt="Death Troopers"/> 
-												<p class="chartext"><b>Death Troopers</b><br>500 HP &amp; 10 ATT</p>
+												<img class="img-responsive charpic" id="deathtroopers" src="assets/images/death-troopers.jpg" alt="Death Troopers"/> 
+												<p class="chartext" id="deathtrooperstext"><b>Death Troopers</b><br>500 HP &amp; 15 ATT</p>
 											</div> <!-- pic -->
 										</div> <!-- column -->
 									</div> <!-- row -->
@@ -121,29 +121,56 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
 										<div id="good">
-											<h3>You &amp; Your Ally</h3>
-											<img class="img-responsive charpic" id="yourchar" src="assets/images/selectchar.jpg" alt="Your Character"/>
-											<p class="chartext" id="yourchartext">Select a character.</p> 
-										
-											<img class="img-responsive charpic" id="yourally" src="assets/images/selectally.jpg" alt="Your Ally"/>
-											<p class="chartext" id="yourallytext">Select an ally.</p> 
+											<div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><h3>You &amp; Your Ally</h3></div></div>
+
+											<div class="row">
+												<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+													<img class="img-responsive charpic" id="yourchar" src="assets/images/selectchar.jpg" alt="Your Character"/>
+													<p class="chartext" id="yourchartext">Select a character.</p> 
+												</div>
+
+												<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">										
+													<img class="img-responsive charpic" id="yourally" src="assets/images/selectally.jpg" alt="Your Ally"/>
+													<p class="chartext" id="yourallytext">Select an ally.</p> 
+												</div>
+											</div>
 										</div>							
 									</div>
 								
-									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 text-center">
 										<div id="versus">
 											<h4>Your Stats</h4>
-											<p>HP: <span id="yourhp"></span><br>ATT: <span id="youratt"></span></p>
+											<!-- <div class="progress">
+	  											<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="400" id="yourhpbar" style="width: 0%"></div>
+											</div> -->
+
+											<p class="stats"><span id="yourhp">0</span> HP</p>
+
+											<!--<div class="progress">
+	  											<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="209" id="yourattbar" style="width: 0%"></div>
+											</div>-->
+
+											<p class="stats"><span id="youratt">0</span> ATT</p>
 						
 											<h4>Enemy Stats</h4>
-											<p>HP: <span id="yourhp"></span><br>ATT: <span id="youratt"></span></p>
-										</div>
+											<!--<div class="progress">
+	  											<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" id="enemyhpbar" style="width: 0%"></div>
+											</div>-->
+
+											<p class="stats"><span id="enemyhp">0</span> HP</p>
+
+											<!--<div class="progress">
+	  											<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" id="enemyattbar" style="width: 0%"></div>
+											</div>-->
+
+											<p class="stats"><span id="enemyatt">0</span> ATT</p>
 
 											<button>ATTACK YOUR ENEMY!</button>
 
-										<div id="result">
-											<p>You have dealt <span id="yourdamage">0</span> damage to your enemy!</p>
-											<p>In return, your enemy has dealt <span id="enemydamage">0</span> damage to you!</p>
+											<div id="result">
+												<p>You have dealt <span id="yourdamage">0</span> damage to your enemy!</p>
+												<p>In return, your enemy has dealt <span id="enemydamage">0</span> damage to you!</p>
+											</div>
 										</div>
 									</div>
 
@@ -159,6 +186,22 @@
 							</div> <!-- battle -->
 							</div> <!-- column -->
 						</div> <!-- row -->
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div id="victory">
+									<h1 class="wintext">Congratulations!<br><span class="littleh1">You have defeated The Empire!</span><br><span class="littleh1">Click here to play again!</span></h1>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div id="defeat">
+									<h1 class="wintext">DEFEAT!<br><span class="littleh1">You have been defeated by The Empire!</span><br><span class="littleh1">Click here to try again!</span></h1>
+								</div>
+							</div>
+						</div>
 						
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

@@ -77,6 +77,10 @@ div#result {
 
 /* ------------------------------------ IMAGES */
 
+img.img-responsive {
+	width: 100%;
+}
+
 img.charpic {
 	border-radius: 15px;
 	border: 1px solid #ffffff;
@@ -96,6 +100,12 @@ img#headerimage {
 	display: none;
 }
 
+img.clicked {
+	filter: grayscale(100%);
+	border: 1px solid #a08066;
+	animation: none !important;
+}
+
 /* ------------------------------------ HEADERS AND TEXT */
 
 h1 {
@@ -107,6 +117,15 @@ h1 {
 	font-size: 50px;
 	color: #ffffff;
 	text-align: center;
+}
+
+h1.wintext {
+	background-color: #0d2e41;
+	color: #ffffff;
+}
+
+span.littleh1 {
+	font-size: 25px;
 }
 
 h2 {
@@ -152,6 +171,10 @@ p.chartext {
 	vertical-align: center;
 }
 
+p.stats {
+	margin-top: -10px;
+}
+
 /* ------------------------------------ MEDIA QUERIES */
 
 /* large devices <1200px */
@@ -162,6 +185,14 @@ p.chartext {
 
 	h2 {
 		font-size: 25px;
+	}
+
+	h1.wintext {
+		font-size: 40px;
+	}
+
+	span.littleh1 {
+		font-size: 20px;
 	}
 }
 
@@ -187,6 +218,9 @@ p.chartext {
 
 /* small devices <768px */
 @media (max-width: 767px) { 
+	h1.wintext {
+		font-size: 30px;
+	}
 }
 
 /* tiny devices < 576px */
@@ -197,6 +231,14 @@ p.chartext {
 
 	h2 {
 		font-size: 20px;
+	}
+
+	h1.wintext {
+		font-size: 25px;
+	}
+
+	span.littleh1 {
+		font-size: 18px;
 	}
 
 	p.chartext {
