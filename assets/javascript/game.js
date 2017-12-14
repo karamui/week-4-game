@@ -34,8 +34,8 @@ $(document).ready(function() {
 	var chirrut = {
 		title: "chirrut",
 		name: "Chirrut Imwe",
-		hp: 100,
-		att: 10,
+		hp: 125,
+		att: 15,
 		source: "assets/images/chirrut.jpg",
 		text: "#chirruttext"
 	};
