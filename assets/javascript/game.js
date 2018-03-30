@@ -255,7 +255,7 @@ $(document).ready(function() {
 	    });
 	}
 
-	// attack your enemy
+	// attacking your enemy
 	$("#attack").on("click", function battle() {
 
 		// ensuring all roles are filled
@@ -338,7 +338,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// update stat text
+	// update stats text
 	function updateText() {
 		// update stats
 		$("#yourhp").text(totalhp);
@@ -378,18 +378,18 @@ $(document).ready(function() {
 		$("#enemyattbar").attr({"aria-valuenow": enemyatt, "style": "width: " + enemyattvalue +"%"});
 	}
 
-	// run the game
+	// running the game
 	selectCharacter();
 	selectAlly();
 	selectEnemy();
 
-	// restart the game after winning
+	// restarting the game after winning
 	$("#victory").one("click", function restart() {
 		location.reload();
 		window.scrollTo(0, 0);
 	});
 
-	// restart the game after losing
+	// restarting the game after losing
 	$("#defeat").one("click", function restart() {
 		location.reload();
 		window.scrollTo(0, 0);
